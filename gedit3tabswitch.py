@@ -5,8 +5,8 @@ from gi.repository import GObject, Gtk, Gdk, Gedit
 class GEdit3TabSwitch(GObject.Object, Gedit.WindowActivatable):
     window = GObject.property(type=Gedit.Window)
 
-    KEYS_LEFT = ('Tab', 'Page_Up')
-    KEYS_RIGHT = ('ISO_Left_Tab', 'Page_Down')
+    KEYS_LEFT = ('ISO_Left_Tab', 'Page_Up')
+    KEYS_RIGHT = ('Tab', 'Page_Down')
     KEYS = KEYS_LEFT + KEYS_RIGHT
 
     def __init__(self):
